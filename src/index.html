@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Journal</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Document</title>
 </head>
 <body>
+    <h1>Daily Journal</h1>
+    <form action="">
+        <fieldset id="journalFieldset">
+            <label id="labels" for="journalDate">Date of Entry</label>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+        <fieldset id="journalFieldset">
+            <label id="labels" for="conceptsCovered">Concepts Covered</label>
+            <input type="text" name="journalEntry" id="journalEntry">
+        </fieldset>
+        <fieldset id="journalFieldset">
+            <label id="labels" for="journalEntry">Journal Entry</label>
+            <input type="text" name="journalDate" id="journalDate">
+        </fieldset>
+        <fieldset id="journalFieldset">
+            <label id="labels" for="moodForTheDay">Mood for the day?</label>
+            <select id ="parks-dropdown-box" size="1">
+                <option value="moodSelection" disabled selected hidden>Mood For the Day</option>
+                <option value="happy">happy</option>
+                <option value="sad">sad</option>
+                <option value="anxious">anxious</option>
+                <option value="fine">Fine</option>
+                <option value="justBreathing">Meh...</option>
+            </select>
+        </fieldset>
+    </form>
+    <button id="recordJournalEntry">Record Journal Entry</button>
     
-    <script src="/scripts/main.js"></script>
 </body>
 </html>
